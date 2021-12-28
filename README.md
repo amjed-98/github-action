@@ -9,7 +9,7 @@ A workflow is a configurable automated process made up of one or more jobs. You 
 GitHub Actions uses YAML syntax to define the workflow. Each workflow is stored as a separate YAML file in your code repository, in a directory called `.github/workflows`.
 
   <details>
-          <summary>YAML :thinking_face: </summary>
+          <summary>YAML 🤔 </summary>
           <p>YAML is a human readable data serialization language mainly used for configuration files and in application in order to store or transmitted data. It is widely used by many programming languages like Java, Python, GoLang and as a configuration language by Kubernetes, Docker Compose, Ansible, etc.</p>
   </details>
 
