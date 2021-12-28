@@ -22,5 +22,6 @@ GitHub offers starter workflows for a variety of languages and tooling. When you
 
 
 ## Resources
+- [everything You nees to know about yaml](https://medium.com/@mohsinzaheer1992/everything-you-need-to-know-about-yaml-9df0600c7255)
+- [Intro to Github actions](https://gist.github.com/LinaYahya/c84f5fd1fc31197262f17b06998e7996)
 - [creating postgres service container](https://docs.github.com/en/actions/using-containerized-services/creating-postgresql-service-containers)
-- 
