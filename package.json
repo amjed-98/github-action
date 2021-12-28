@@ -1,0 +1,36 @@
+{
+  "name": "Books-store",
+  "version": "1.0.0",
+  "description": "Book store (by database)",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server/index.js",
+    "dev": "NODE_ENV=development nodemon server/index.js",
+    "test": "NODE_ENV=test jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G8/Books-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G8/Books-store/issues"
+  },
+  "homepage": "https://github.com/GSG-G8/Books-store#readme",
+  "devDependencies": {
+    "eslint": "^8.4.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "jest": "^27.4.3",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  }
+}
