@@ -1,6 +1,11 @@
 const request = require("supertest");
 const app = require("../server/app");
+const dbBuild = require("../server/Database/config/build");
+const connection = require("../server/Database/config/connection");
 
+beforeAll(() => {
+  dbBuild();
+});
 test("What your tests is testing", (done) => {
   request(app)
     .get("/")
@@ -22,4 +27,8 @@ test("test our database", (done) => {
       expect(res.body[0].name).toBe("A Thousand Splendid Suns");
       return done();
     });
+});
+
+afterAll(() => {
+  connection.end();
 });
