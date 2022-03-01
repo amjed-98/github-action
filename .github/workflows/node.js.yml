@@ -18,10 +18,10 @@ jobs:
         image: postgres
         # Provide the password for postgres
         env:
-          POSTGRES_PASSWORD: hello
-          POSTGRES_USER: postgres_user
           POSTGRES_DB: postgres_db
+          POSTGRES_PASSWORD: postgres_password
           POSTGRES_PORT: 5432
+          POSTGRES_USER: postgres_user
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd pg_isready
@@ -49,4 +49,4 @@ jobs:
         # Environment variables used by the `client.js` script to create
         # a new PostgreSQL table.
         env:
-          DB_URL_TEST: postgres://postgres_user:hello@postgres:5432/postgres_db
+          POSTGRES_DB: postgres://postgres_user:postgres_password@postgres:5432/postgres_db
