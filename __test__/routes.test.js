@@ -4,7 +4,7 @@ const dbBuild = require("../server/Database/config/build");
 const connection = require("../server/Database/config/connection");
 
 beforeAll(() => {
-  dbBuild();
+  return dbBuild();
 });
 test("What your tests is testing", (done) => {
   request(app)
@@ -30,5 +30,5 @@ test("test our database", (done) => {
 });
 
 afterAll(() => {
-  connection.end();
+  return connection.end();
 });
