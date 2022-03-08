@@ -7,7 +7,7 @@ test('What your tests is testing', (done) => {
       .expect(200)
       .end(function(err, res) {
         if (err) return done(err);
-        expect(res.body.msg).toBe('welcome to github ')
+        expect(res.body.msg).toBe('welcome to github actions')
         return done();
       })
     })
